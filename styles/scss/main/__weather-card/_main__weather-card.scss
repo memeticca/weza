@@ -1,0 +1,28 @@
+.main__weather-card {
+  .main-weather-card__feels-like {
+    margin: 20px 0;
+  }
+
+  .main-weather-card__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    .info-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+
+      .info-container__header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .info-icon {
+          width: 30px;
+        }
+      }
+    }
+  }
+}

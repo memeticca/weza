@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+header h2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+header > input[type=text] {
+  padding: 10px 20px;
+  background-color: transparent;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+header > input[type=text]::-moz-placeholder {
+  font-size: 14px;
+  color: rgb(77, 77, 77);
+}
+header > input[type=text]::placeholder {
+  font-size: 14px;
+  color: rgb(77, 77, 77);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 50px;
+}
+
+.main__bottom,
+.main__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0.1px 0.1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main__main-card {
+  text-align: center;
+}
+.main__main-card .main-card__header {
+  margin-bottom: 25px;
+}
+
+.main__weather-card .main-weather-card__feels-like {
+  margin: 20px 0;
+}
+.main__weather-card .main-weather-card__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.main__weather-card .main-weather-card__info .info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.main__weather-card .main-weather-card__info .info-container .info-container__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main__weather-card .main-weather-card__info .info-container .info-container__header .info-icon {
+  width: 30px;
+}
+
+.daily-weather .daily-weather__table {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+.daily-weather .daily-weather__table .day-weather {
+  text-align: center;
+}
+.daily-weather .daily-weather__table .day-weather .day-weather__humidity {
+  display: flex;
+  align-items: center;
+}
+.daily-weather .daily-weather__table .day-weather .day-weather__humidity img {
+  width: 24px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 45px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+body * {
+  font-family: "Poppins", sans-serif;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+
+  h2 {
+    user-select: none;
+  }
+
+  > input[type="text"] {
+    padding: 10px 20px;
+    background-color: transparent;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    &::placeholder {
+      font-size: 14px;
+      color: rgb(77, 77, 77);
+    }
+  }
+}

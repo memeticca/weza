@@ -1,0 +1,21 @@
+.daily-weather {
+  .daily-weather__table {
+    display: flex;
+    gap: 50px;
+
+    margin-top: 20px;
+
+    .day-weather {
+      text-align: center;
+
+      .day-weather__humidity {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 24px;
+        }
+      }
+    }
+  }
+}

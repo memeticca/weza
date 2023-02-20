@@ -1,0 +1,20 @@
+@use "header/header";
+
+@use "main/main";
+@use "main/__main-card/main__main-card";
+@use "main/__weather-card/main__weather-card";
+@use "main/__daily-weather/main__daily-weather";
+
+@use "elements/headings";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+body * {
+  font-family: "Poppins", sans-serif;
+}
