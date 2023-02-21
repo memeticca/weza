@@ -3,26 +3,33 @@
     margin: 20px 0;
   }
 
-  .main-weather-card__info {
+  .main-weather-card__info-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 
-    .info-container {
+    .weather-info {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 50px;
 
-      .info-container__header {
+      .weather-info__header {
         display: flex;
         align-items: center;
         gap: 10px;
 
-        .info-icon {
+        .weather-info__icon {
           width: 30px;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 930px) {
+    .main-weather-card__info-container {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

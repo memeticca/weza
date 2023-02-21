@@ -1,0 +1,30 @@
+.forecast-card {
+  .forecast-card__table {
+    display: flex;
+    justify-content: center;
+    gap: 2vmax;
+
+    margin-top: 20px;
+
+    .forecast {
+      text-align: center;
+
+      h1 {
+        font-size: 3vmax;
+      }
+
+      .forecast__icon {
+        width: 5vmax;
+      }
+
+      .forecast__humidity {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 2vmax;
+        }
+      }
+    }
+  }
+}

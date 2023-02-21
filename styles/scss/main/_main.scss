@@ -4,6 +4,7 @@ main {
   justify-content: center;
   gap: 20px;
   padding: 20px 50px;
+  background: linear-gradient(180deg, #687585 0%, #202b39 100%);
 }
 
 .main__bottom,
@@ -12,15 +13,4 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-}
-
-.info-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding: 20px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  box-shadow: 0.1px 0.1px 10px rgba(0, 0, 0, 0.5);
 }
