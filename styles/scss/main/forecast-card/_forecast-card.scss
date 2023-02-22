@@ -1,5 +1,5 @@
 .forecast-card {
-  .forecast-card__table {
+  .forecast-card__container {
     display: flex;
     justify-content: center;
     gap: 2vmax;
@@ -10,7 +10,7 @@
       text-align: center;
 
       h1 {
-        font-size: 3vmax;
+        font-size: clamp(1rem, 2vw + 1rem, 2.5rem);
       }
 
       .forecast__icon {

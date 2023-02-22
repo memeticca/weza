@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="styles/css/style.css" />
   </head>
   <body>
+    <script src="main.js" async defer></script>
     <header>
       <h2>weza</h2>
-      <input type="text" placeholder="Search City" />
+      <input
+        type="text"
+        placeholder="Search City"
+        onchange="updateAll(this.value)"
+      />
     </header>
 
     <main>
@@ -18,53 +23,14 @@
         <div class="main__main-card info-card">
           <img src="https://cdn.weatherapi.com/weather/128x128/day/122.png" />
           <div class="main-card__header">
-            <p>Brasilia,</p>
-            <p>Distrito Federal</p>
+            <h1>Loading</h1>
           </div>
-          <h1>27°</h1>
-          <p>Overcast</p>
         </div>
 
         <div class="main__weather-card info-card">
-          <h3>Weather in Brasilia</h3>
-
+          <h3>Weather in</h3>
           <div class="main-weather-card__feels-like">
-            <h1>28°</h1>
-            <p>Feels like</p>
-          </div>
-
-          <div class="main-weather-card__info-container">
-            <div class="weather-info">
-              <div class="weather-info__header">
-                <img class="weater-info__icon" src="images/temperature.png" />
-                <p>Temperature</p>
-              </div>
-              <p>27°</p>
-            </div>
-
-            <div class="weather-info">
-              <div class="weather-info__header">
-                <img class="weater-info__icon" src="images/humidity.png" />
-                <p>Humidity</p>
-              </div>
-              <p>50%</p>
-            </div>
-
-            <div class="weather-info">
-              <div class="weather-info__header">
-                <img class="weater-info__icon" src="images/pressure.png" />
-                <p>Pressure</p>
-              </div>
-              <p>1016 mb</p>
-            </div>
-
-            <div class="weather-info">
-              <div class="weather-info__header">
-                <img class="weater-info__icon" src="images/wind.png" />
-                <p>Wind</p>
-              </div>
-              <p>East, 12.5 km/h</p>
-            </div>
+            <h1>Loading...</h1>
           </div>
         </div>
       </div>
@@ -72,30 +38,26 @@
       <div class="main__bottom">
         <div class="forecast-card info-card">
           <h3>Hourly Forecast</h3>
-          <div class="forecast-card__table">
+          <div class="forecast-card__container" id="hourly-card-container">
             <div class="forecast">
-              <p>Today</p>
-              <h1>24°</h1>
-              <img class="forecast__icon" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" />
-              <div class="forecast__humidity">
-                <img src="images/humidity.png" />
-                <p>36%</p>
-              </div>
+              <h1>Loading</h1>
+              <img
+                class="forecast__icon"
+                src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+              />
             </div>
           </div>
         </div>
 
         <div class="forecast-card info-card">
           <h3>Daily Forecast</h3>
-          <div class="forecast-card__table">
+          <div class="forecast-card__container" id="daily-card-container">
             <div class="forecast">
-              <p>Today</p>
-              <h1>24°</h1>
-              <img class="forecast__icon" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" />
-              <div class="forecast__humidity">
-                <img src="images/humidity.png" />
-                <p>36%</p>
-              </div>
+              <h1>Loading</h1>
+              <img
+                class="forecast__icon"
+                src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+              />
             </div>
           </div>
         </div>

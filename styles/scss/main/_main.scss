@@ -1,10 +1,8 @@
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 20px;
-  padding: 20px 50px;
-  background: linear-gradient(180deg, #687585 0%, #202b39 100%);
+  padding: 20px;
 }
 
 .main__bottom,

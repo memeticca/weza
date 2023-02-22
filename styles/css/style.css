@@ -4,6 +4,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  background-color: white;
 }
 header h2 {
   color: #394451;
@@ -30,10 +31,8 @@ header > input[type=text]::placeholder {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 20px;
-  padding: 20px 50px;
-  background: linear-gradient(180deg, #687585 0%, #202b39 100%);
+  padding: 20px;
 }
 
 .main__bottom,
@@ -47,8 +46,14 @@ main {
 .main__main-card {
   text-align: center;
 }
+.main__main-card img {
+  width: 128px;
+  height: 128px;
+}
 .main__main-card .main-card__header {
+  width: 130px;
   margin-bottom: 25px;
+  word-wrap: break-word;
 }
 
 .main__weather-card .main-weather-card__feels-like {
@@ -73,33 +78,33 @@ main {
 .main__weather-card .main-weather-card__info-container .weather-info .weather-info__header .weather-info__icon {
   width: 30px;
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 776px) {
   .main__weather-card .main-weather-card__info-container {
     display: flex;
     flex-direction: column;
   }
 }
 
-.forecast-card .forecast-card__table {
+.forecast-card .forecast-card__container {
   display: flex;
   justify-content: center;
   gap: 2vmax;
   margin-top: 20px;
 }
-.forecast-card .forecast-card__table .forecast {
+.forecast-card .forecast-card__container .forecast {
   text-align: center;
 }
-.forecast-card .forecast-card__table .forecast h1 {
-  font-size: 3vmax;
+.forecast-card .forecast-card__container .forecast h1 {
+  font-size: clamp(1rem, 2vw + 1rem, 2.5rem);
 }
-.forecast-card .forecast-card__table .forecast .forecast__icon {
+.forecast-card .forecast-card__container .forecast .forecast__icon {
   width: 5vmax;
 }
-.forecast-card .forecast-card__table .forecast .forecast__humidity {
+.forecast-card .forecast-card__container .forecast .forecast__humidity {
   display: flex;
   align-items: center;
 }
-.forecast-card .forecast-card__table .forecast .forecast__humidity img {
+.forecast-card .forecast-card__container .forecast .forecast__humidity img {
   width: 2vmax;
 }
 
@@ -138,6 +143,10 @@ h3 {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  background-image: linear-gradient(to right, #687585, #202b39);
 }
 
 body,
