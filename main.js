@@ -1,5 +1,5 @@
 const API =
-  "http://api.weatherapi.com/v1/current.json?key=b502083565da49e39d3165635232002&q=";
+  "https://api.weatherapi.com/v1/current.json?key=b502083565da49e39d3165635232002&q=";
 
 const getCurrentWeather = async (city) =>
   fetch(`${API}${city}`).then((response) => response.json());
@@ -90,7 +90,8 @@ const generateHourlyForecast = (weatherForecast, count) => {
     },
   } = weatherForecast;
 
-  for (let i = 0; i < count; i++) {
+  const hoursAvaible = Object.keys(today.hour).length - currentDate.getHours();
+  for (let i = 0; i < hoursAvaible; i++) {
     const {
       time,
       temp_c: temperature,
@@ -124,7 +125,7 @@ const generateDailyForecast = (weatherForecast, count) => {
     forecast: { forecastday },
   } = weatherForecast;
 
-  for (let i = 0; i < count; i++) {
+  for (let i = 0; i < Math.min(Object.keys(forecastday).length, count); i++) {
     const {
       date: forecastDate,
       day: {
